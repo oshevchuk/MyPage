@@ -1,24 +1,22 @@
-body{
+body {
   background-color: #252627;
   overflow: hidden;
   display: block;
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
-  margin:0;
+  margin: 0;
   color: #444;
-  font: 300 11px/1.4 'Helvetica Neue',Helvetica,Arial,sans-serif
-}
+  font: 300 11px/1.4 'Helvetica Neue',Helvetica,Arial,sans-serif; }
 
-#navBar{
+#navBar {
   background-color: #181818;
   width: 60px;
   height: 100%;
   position: absolute;
-  top:0;
+  top: 0;
   z-index: 3;
-  min-height: 500px;
-
-  .logo{
+  min-height: 500px; }
+  #navBar .logo {
     background-color: #070707;
     display: block;
     padding: 8px 0;
@@ -26,20 +24,18 @@ body{
     text-align: center;
     font-weight: 600;
     padding-top: 15px;
-    padding-bottom: 10px;
-
-    .first{
+    padding-bottom: 10px; }
+    #navBar .logo .first {
       display: block;
-      color: rgb(253, 9, 84);
+      color: #fd0954;
       font-size: 50px;
       width: 100%;
       line-height: 45px;
       position: relative;
       z-index: 1;
-      padding-left: 4px;
-    }
-    .first:before{
-      top:0;
+      padding-left: 4px; }
+    #navBar .logo .first:before {
+      top: 0;
       content: 'A';
       color: white;
       left: -4px;
@@ -47,25 +43,20 @@ body{
       font-size: 50px;
       width: 100%;
       display: block;
-      line-height: 45px;
-    }
-    .short{
+      line-height: 45px; }
+    #navBar .logo .short {
       display: block;
       color: white;
-      width: 100%;
-    }
-  }
-
-  .icons{
+      width: 100%; }
+  #navBar .icons {
     display: block;
     text-align: center;
     height: 210px;
-    top:50%;
+    top: 50%;
     margin-top: -120px;
     width: 100%;
-    position: absolute;
-
-    a{
+    position: absolute; }
+    #navBar .icons a {
       text-decoration: none;
       position: relative;
       display: block;
@@ -77,10 +68,8 @@ body{
       -moz-transition: all 0.3s ease;
       -ms-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
-      transition: all 0.3s ease;
-    }
-
-    a::after{
+      transition: all 0.3s ease; }
+    #navBar .icons a::after {
       content: '';
       font-size: 10px;
       position: absolute;
@@ -88,38 +77,24 @@ body{
       display: block;
       width: 100%;
       text-align: center;
-      opacity: 0;
-    }
-
-    a:first-child::after{
-      content: 'HOME';
-    }
-    a:first-child + a::after{
-      content: 'ABOUT';
-    }
-    a:first-child + a + a::after{
-      content: 'SKILLS';
-    }
-    a:first-child + a + a + a::after{
-      content: 'MY WORK';
-    }
-    a:first-child + a + a + a + a::after{
-      content: 'CONTACT';
-    }
-
-    a:hover{
-      color: #08fdd8;
-      //opacity: 0;
-      i{
-        opacity: 0;
-      }
-      &::after{
-        opacity: 1;
-      }
-    }
-  }
-
-  ul{
+      opacity: 0; }
+    #navBar .icons a:first-child::after {
+      content: 'HOME'; }
+    #navBar .icons a:first-child + a::after {
+      content: 'ABOUT'; }
+    #navBar .icons a:first-child + a + a::after {
+      content: 'SKILLS'; }
+    #navBar .icons a:first-child + a + a + a::after {
+      content: 'MY WORK'; }
+    #navBar .icons a:first-child + a + a + a + a::after {
+      content: 'CONTACT'; }
+    #navBar .icons a:hover {
+      color: #08fdd8; }
+      #navBar .icons a:hover i {
+        opacity: 0; }
+      #navBar .icons a:hover::after {
+        opacity: 1; }
+  #navBar ul {
     position: absolute;
     bottom: 20px;
     width: 100%;
@@ -127,104 +102,87 @@ body{
     padding: 0;
     list-style: none;
     text-align: center;
-    margin: 0;
-
-    a{
+    margin: 0; }
+    #navBar ul a {
       padding: 7px 0;
       display: block;
       font-size: 15px;
       line-height: 16px;
-      color: #4d4d4e;
-    }
-    a:hover {
-      color: #08fdd8;
-    }
-  }
-}
+      color: #4d4d4e; }
+    #navBar ul a:hover {
+      color: #08fdd8; }
 
-#page{
+#page {
   display: block;
-  width:100%;
+  width: 100%;
   height: 100%;
-  position: absolute;
-
-  .container{
+  position: absolute; }
+  #page .container {
     width: 100%;
     height: 90%;
     position: absolute;
     min-height: 570px;
-    top:5%;
+    top: 5%;
     margin: 0 auto;
-    z-index: 1;
-
-    .tags{
+    z-index: 1; }
+    #page .container .tags {
       color: #515152;
       position: absolute;
       left: 80px;
       font-size: 18px;
-      font-family: 'La Belle Aurore',cursive;
-    }
-
-    .text-zone{
+      font-family: 'La Belle Aurore',cursive; }
+    #page .container .text-zone {
       position: absolute;
       left: 10%;
       top: 50%;
       width: 55%;
-      max-height: 90%;
-
-      .blast-root{
+      max-height: 90%; }
+      #page .container .text-zone .blast-root {
         color: white;
         line-height: 30px;
         margin: 0;
         padding: 0;
-        font-size: 0;
-
-        .letter{
+        font-size: 0; }
+        #page .container .text-zone .blast-root .letter {
           position: relative;
           color: white;
-          padding-right: 5px;
-        }
-        .letter:after{
-          top:0;
+          padding-right: 5px; }
+        #page .container .text-zone .blast-root .letter:after {
+          top: 0;
           content: 'A';
-          //color: white;
           color: #fd0954;
           left: 4px;
           position: absolute;
           font-size: 60px;
           width: 100%;
           display: block;
-          line-height: 30px;
-        }
-
-        .blast{
+          line-height: 30px; }
+        #page .container .text-zone .blast-root .blast {
           font-size: 60px;
           display: inline-block;
           -webkit-transition: all 0.3s ease-out;
           -moz-transition: all 0.3s ease-out;
           -ms-transition: all 0.3s ease-out;
           -o-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out;
-        }
-        .blast:hover{
+          transition: all 0.3s ease-out; }
+        #page .container .text-zone .blast-root .blast:hover {
           color: #08fdd8;
           animation-duration: 1.0s;
           animation-fill-mode: both;
           animation-iteration-count: 1;
-          animation-name: rubberBand;
-        }
-      }
-    }
-  }
-}
+          animation-name: rubberBand; }
 
 @keyframes rubberBand {
-  0% {transform: scale(1);}
-  30% {transform: scaleX(1.25) scaleY(0.75);}
-  40% {transform: scaleX(0.75) scaleY(1.25);}
-  60% {transform: scaleX(1.15) scaleY(0.85);}
-  100% {transform: scale(1);}
-}
+  0% {
+    transform: scale(1); }
+  30% {
+    transform: scaleX(1.25) scaleY(0.75); }
+  40% {
+    transform: scaleX(0.75) scaleY(1.25); }
+  60% {
+    transform: scaleX(1.15) scaleY(0.85); }
+  100% {
+    transform: scale(1); } }
+
 .rubberBand {
-  animation-name: rubberBand;
-}
+  animation-name: rubberBand; }
