@@ -12,8 +12,11 @@
             } else {
                 if (el[i] == '|')
                     html_text += ('<br>');
+                else if (el[i] == "A")
+                    html_text += ('<span class="blast letter animated">' + el[i] + '</span>');
                 else
                     html_text += ('<span class="blast animated">' + el[i] + '</span>');
+
             }
         }
         $('h1.blast-root').html(html_text);
