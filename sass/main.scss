@@ -208,17 +208,17 @@ body{
         }
         .blast:hover{
           color: #08fdd8;
-          animation-duration: 1.0s;
-          animation-fill-mode: both;
-          animation-iteration-count: 1;
-          animation-name: rubberBand;
+          //animation-duration: 2.0s;
+          //animation-fill-mode: both;
+          //animation-iteration-count: 1;
+          //animation-name: rubberBand;
         }
       }
     }
   }
 }
 
-@keyframes rubberBand {
+@keyframes rubberBand1 {
   0% {transform: scale(1);}
   30% {transform: scaleX(1.25) scaleY(0.75);}
   40% {transform: scaleX(0.75) scaleY(1.25);}
@@ -226,5 +226,9 @@ body{
   100% {transform: scale(1);}
 }
 .rubberBand {
-  animation-name: rubberBand;
+  animation-name: rubberBand1;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  //animation-iteration-count: infinite;
+  animation-iteration-count: 1;
 }
