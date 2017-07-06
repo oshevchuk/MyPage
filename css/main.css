@@ -131,10 +131,20 @@ body {
       left: 80px;
       font-size: 18px;
       font-family: 'La Belle Aurore',cursive; }
+    #page .container .tag {
+      color: #515152;
+      position: relative;
+      left: 20px;
+      top: -10px;
+      font-size: 18px;
+      font-family: 'La Belle Aurore',cursive;
+      font-weight: normal; }
+    #page .container .bottom-tags {
+      bottom: 0px; }
     #page .container .text-zone {
       position: absolute;
       left: 10%;
-      top: 50%;
+      top: 30%;
       width: 55%;
       max-height: 90%; }
       #page .container .text-zone .blast-root {
@@ -167,6 +177,73 @@ body {
           transition: all 0.3s ease-out; }
         #page .container .text-zone .blast-root .blast:hover {
           color: #08fdd8; }
+      #page .container .text-zone h2 {
+        color: #8d8d8d;
+        margin-top: 9px;
+        font-weight: normal;
+        font-size: 11px;
+        font-family: "Open Sans",sans-serif;
+        letter-spacing: 3px;
+        margin: 0; }
+    #page .container .big {
+      position: absolute;
+      color: #08fdd8;
+      right: 15%;
+      font-size: 70vh;
+      line-height: 70vh;
+      transform: rotate(-30deg);
+      font-family: "Open Sans",sans-serif;
+      font-weight: 600; }
+      #page .container .big:after {
+        content: 'A';
+        top: 2px;
+        left: 5vh;
+        color: #fd0954;
+        position: absolute;
+        display: block; }
+
+.more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none; }
+  .more span {
+    font-size: 12px;
+    transform: rotate(45deg);
+    background-color: black;
+    color: #08fdd8;
+    text-transform: uppercase;
+    display: block;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    top: -8px;
+    right: -53px;
+    padding-bottom: 10px; }
+
+.contact-btn {
+  color: #08fdd8;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-family: "Open Sans",sans-serif;
+  text-decoration: none;
+  padding: 6px 10px;
+  border: 1px solid #08fdd8;
+  margin-top: 40px;
+  float: left;
+  border-radius: 4px;
+  white-space: nowrap;
+  background-color: transparent;
+  text-transform: uppercase; }
+
+.contact-btn:hover {
+  background-color: #08fdd8;
+  color: #070707; }
+
+#canvas svg {
+  width: 100% !important;
+  height: 100vh !important; }
 
 @keyframes rubberBand1 {
   0% {

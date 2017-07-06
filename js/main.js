@@ -19,9 +19,11 @@
 
             }
         }
+
+        html_text+='<span class="tag"> &lt;/h1&gt;</span>';
         $('h1.blast-root').html(html_text);
 
-        $('.blast').bind('mouseenter', function (e) {
+        $('.blast, .contact-btn').bind('mouseenter', function (e) {
             // console.log(1);
             // $(this).css({});
             // $(this).css({ '-webkit-animation-name': 'rubberBand'}).delay(1000, function () {
