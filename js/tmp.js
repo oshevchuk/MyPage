@@ -84,14 +84,14 @@
         circs.attr({fill: "#08fdd8", stroke: "#00DDAA"});
         moveIt();
         elie = document.getElementById("toggle");
-        elie.onclick = function() {
-            (toggler++ % 2) ? (function(){
-                moveIt();
-                elie.value = " Stop ";
-            }()) : (function(){
-                clearTimeout(timer);
-                elie.value = " Start ";
-            }());
-        }
+        // elie.onclick = function() {
+        //     (toggler++ % 2) ? (function(){
+        //         moveIt();
+        //         elie.value = " Stop ";
+        //     }()) : (function(){
+        //         clearTimeout(timer);
+        //         elie.value = " Start ";
+        //     }());
+        // }
     };
 }());

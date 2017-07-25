@@ -201,6 +201,17 @@ body {
         color: #fd0954;
         position: absolute;
         display: block; }
+  #page .foto {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    background-image: url("../img/2.png");
+    width: 130px;
+    height: 130px;
+    background-size: 140% 140%;
+    background-position: 30% 50%;
+    border-radius: 50%;
+    border: solid 5px #5d5d5e; }
 
 .more {
   position: absolute;
